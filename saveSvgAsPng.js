@@ -418,7 +418,7 @@
         saveLink.href = uri;
         saveLink.style.display = 'none';
         document.body.appendChild(saveLink);
-        var blob = utils.dataURIToBlob(uri);
+        var blob = uriToBlob(uri);
         var url = URL.createObjectURL(blob);
         saveLink.href = url;
         saveLink.onclick = function() {
